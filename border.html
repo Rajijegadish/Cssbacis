@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
+    <title>border style</title>
+    <style>
+        body{
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-oBQJrhs5GXe5HTqSH13n3PgEV3QyPVkhkw&usqp=CAU);
+        }
+        p{
+            border-width: 10px;
+            border-color: blue;
+            color:beige
+        }
+       p.dashed {
+            border-style:dashed;
+        }
+        p.dotted {
+            border-style:dotted;
+        }
+        p.solid {
+            border-style:solid;
+        }
+        p.double {
+            border-style:double;
+        }
+        p.groove {
+            border-style:groove;
+            
+        }
+        p.ridge {
+            border-style:ridge;
+        }
+         p.inset {
+            border-style:inset;
+        }
+        p.outset {
+            border-style:outset;
+        } p.none {
+            border-style:none;
+        }
+        p.hidden {
+            border-style:hidden;
+        }
+        
+        p.mix {
+            border-style: dotted inset dashed solid;
+        }
+        div{
+            background-color:black;
+            height:100px;
+            width:100px;
+            margin:40px;
+            border-color: red;
+            border-width: 20px;
+            border-style: solid;
+        }
+        #box2{
+            background-color: black;
+            margin:0;
+            width: 200px;
+            height:50px;
+            border-radius: 5px;
+            border-color:yellow;
+            color:antiquewhite;
+            padding: 15px ;
+        }
+        .div1{
+            width:70%;
+            background-color: aqua;
+            color:rgb(153, 24, 213);
+            border:2px dashed red;
+            padding: 5px;
+            margin: 10px;
+            outline: thick ridge rgb(0, 255, 13);
+        }h3{
+            width:100% ;
+            padding:10px;
+            background-color: aquamarine;
+            outline:thick groove orangered ;
+        }
+    h4{
+
+color:rgb(19, 224, 43);
+text-transform: uppercase;
+text-decoration-line: underline;
+  text-decoration-color: red;  
+  text-decoration-style: wavy; 
+  text-decoration-thickness: auto; 
+        }
+        h5{
+            width:100%;
+            padding: 15px;
+            background-color: blueviolet;
+            outline: thick inset green;
+        }
+        a:link{
+            color:blueviolet;
+            background-color: aquamarine;
+        }
+        a:visited{
+            color:chartreuse;
+            background-color: cyan;
+        }
+        a:hover{
+            color:crimson;
+            background-color: cornflowerblue ;
+        }
+        a:active{
+            color:blue;
+            background-color: rgb(255, 0, 166);
+        }
+        ul{
+            list-style-image: url(style="width:10px;"'data:image/png;base64,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');
+            border-radius: 2px outset rgb(30, 4, 20);
+            background-color: cadetblue;
+            list-style-position: inside;
+        }
+        table,th,td{
+            border:2px solid red;
+            background-color: cyan;
+            
+        }
+        table{
+            border-collapse:collapse;
+            width:100%;
+        }
+        tr:hover{background-color: coral;}
+    </style>
+</head>
+<body>>
+   <h4>Border</h4> 
+  <p class="dashed">Border Dashed</p>  
+  <p class="dotted">Border Dotted</p>  
+  <p class="solid">Border solid</p>  
+  <p class="double">Border Double</p>  
+  <p class="groove">Border groove</p>  
+  <p class="inset">Border inset</p>  
+  <p class="outset">Border outset</p>  
+  <p class="none">Border none</p> 
+  <p class="ridge">Border ridge</p>
+  <p class="hidden">Border hidden</p>  
+  <p class="mix">Border Dashed</p> 
+  <h4>Margin</h4> 
+<div style="margin-top:20px;"></div>
+<div id="box2"><h2>Hello World</h2></div>
+<h4>Box Model</h4>
+<div class="div1">
+<pre>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+ Aut id pariatur unde ducimus corporis, dolore officiis odit 
+ doloremque velit! Sapiente fugit eaque enim aperiam culpa.
+ Nesciunt praesentium quidem dolore voluptate.</pre>
+ </div>
+ <h4>Css Text</h4>
+ <h3 style="text-align:center;">Hello World</h3>  
+ <h3 style="text-align:left;">Hello World</h3>  
+ <h3 style="text-align:right;">Hello World</h3>  
+ <h4>Text Spacing</h4>
+ <h5 style="letter-spacing:15px ;">Helloworld</h5>
+ <h5 style="text-indent:15px;">Helloworld Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore debitis animi facere consequuntur. Illum nemo debitis nisi, sunt, laborum aut culpa tempora tempore, dolore amet alias nostrum. Aspernatur, voluptas modi.</h5>
+<h5 style="word-spacing:15px;">Helloworld Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore debitis animi facere consequuntur. Illum nemo debitis nisi, sunt, laborum aut culpa tempora tempore, dolore amet alias nostrum. Aspernatur, voluptas modi.</h5>
+<h5 style="line-height:8px;">Helloworld Lorem ipsum dolor sit amet consectetur adipisicing 
+    elit. Labore debitis animi facere consequuntur. Illum nemo debitis nisi, sunt, 
+    laborum aut culpa tempora tempore, dolore amet alias nostrum. Aspernatur, voluptas modi.</h5>
+<h5 style="white-space:nowrap;"></h5> hello world</h5>
+<h5 style="text-shadow: 2px 2px red;">Text-Shadow</h5>
+<h5 style="text-shadow: 2px 2px 5px red;">Text-Shadow Effect</h5>
+<h5 style="text-shadow: 2px 2px 5px #000000;color:white;">TextShadow Effect</h5>
+<h5 style="text-shadow: 0 0 6px hsl(66, 100%, 50%);">TextShadow</h5>
+<h5 style="text-shadow:  1px 2px black, 0 0 25px blue, 0 0 5px darkblue;color:white;">Text-Shadow</h5>
+<i class="fas fa-cloud" style="font-size:48px;color:red;">cloud</i>
+<i class="fas fa-cloud" style="font-size:60px;color:lightblue;"></i>
+<h4>Links</h4>
+<p><b><a href="loginpage.html" target="_blank">This is Link</b></p></a>
+<h4>List</h4>
+<ul>
+    <li>Frontend</li>
+    <li>Backend</li>
+    <li>fullstrack</li>
+</ul>
+<h4>Table</h4>
+<table>
+    <tr><th>FirstName</th><th>Moblie Number</th><th>Email</th></tr>
+    <tr><td>Raji</td><td>9878273872</td><td>raji@gmail.com</td></tr>
+    <tr><td>kashvi</td><td>867678909</td><td>kashvi@yahoo.com</td></tr>
+    <tr><td>Raja</td><td>9763624699</td><td>raja@gmail.com</td></tr>
+</table>
+
+
+
+</body>
+</html>
